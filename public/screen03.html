@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UC Davis Lost and Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #feebb1;
+    }  
+    textarea{
+      background-color:#e5e5e5;
+      border: none;
+      width: 99%;
+      font-size: 1.5em;
+    }
+    
+    #nextBtn {
+      background-color: #daab27;
+    }
+    
+    #photoLabel {
+      background-color: #e5e5e5;
+      width: auto !important;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  </style>
+	<script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <a href="/screen02.html">
+      <img id="logo" src="https://cdn.glitch.com/8b0c4380-0d00-4dd0-8b77-033196b79fe7%2FLogo.png?v=1591015746007">
+    </a>
+  </header>
+  <main>
+    <h1 class="sectionTitle">Input the found item</h1>
+    <section id="form">
+      <form method="post" enctype="multipart/form-data">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="category">Choose the category that the item belongs to.</label><br>
+        <input list="categories" id="category" name="category" onfocus="this.value=''"><br>
+        <datalist id="categories">
+          <option value="Electronics"></option>
+          <option value="Wallet"></option>
+          <option value="Accessories"></option>
+          <option value="Books"></option>
+          <option value="Keys"></option>
+          <option value="Bike/Scooter"></option>
+          <option value="Others"></option>
+        </datalist>
+        
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        
+        <label>Attach A Photo(Optional)</label><br>
+        <input id="imgUpload" type="file" accept="image/*" name="photo" style="display:none;"/>   
+        <label id="photoLabel" for="imgUpload">Choose File</label>
+        <br>
+        
+        <div id="btnRow">
+          <button type="button" class="btn" id="nextBtn" onclick="finderNext()">Next</button>
+        </div>
+    </form>
+    </section>
+    
+    <h1 class="sectionTitle">Or search for existing requests</h1>
+    <section id="search">
+      <div class="search-container">
+        <input id="searchTxt" type="text" placeholder="Search.." name="search">
+        <img id="searchBtn" onclick="searchBtnClick()" src="https://cdn.glitch.com/8b0c4380-0d00-4dd0-8b77-033196b79fe7%2Fsearch-solid.svg?v=1591018108417">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
