@@ -8,5 +8,7 @@
 * Search for lost/found items
 
 ## Gallery
-![Image of login page] 
-(https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/login.png "login page")
+<img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/login.png" width=45%> <img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/home.png" width=45%>
+<img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/found2.png" width=45%> <img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/found2.png" width=45%>
+<img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/search.png" width=45%> <img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/results1.png" width=45%>
+<img src="https://github.com/ETHANYICHIANG/404_not_found/blob/master/images/results2.png" width=45%> 
